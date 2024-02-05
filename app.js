@@ -28,7 +28,7 @@ function verificarChute() {
     } else {
       exibirTextoNaTela('p', 'O número secreto é maior.');
     }
-    tentativas++;
+    chute > 0 ? tentativas++ : tentativas;
     limparCampo();
   }
 }
